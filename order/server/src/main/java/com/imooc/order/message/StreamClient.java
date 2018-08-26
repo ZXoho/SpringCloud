@@ -11,11 +11,12 @@ import org.springframework.messaging.SubscribableChannel;
  */
 public interface StreamClient {
 
-    String INPUT = "myMessage";
+    String INPUT = "myMessage1";
+    String OUTUT = "myMessage2";
 
     @Input(StreamClient.INPUT)
     SubscribableChannel input();
 
-    @Output(StreamClient.INPUT)
+    @Output(StreamClient.OUTUT)
     MessageChannel output();
 }

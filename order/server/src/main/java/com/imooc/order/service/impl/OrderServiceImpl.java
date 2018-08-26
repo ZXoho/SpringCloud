@@ -14,6 +14,7 @@ import com.imooc.product.common.DecreaseStockInput;
 import com.imooc.product.common.ProductInfoOutput;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -26,6 +27,7 @@ import java.util.stream.Collectors;
  * 2017-12-10 16:44
  */
 @Service
+@Component
 public class OrderServiceImpl implements OrderService {
 
     @Autowired

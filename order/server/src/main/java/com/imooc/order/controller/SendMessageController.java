@@ -6,9 +6,12 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+
 /**
  * Created by ZXoho
  * 2018/8/25 16:10
+ * stream发送消息
  */
 @RestController
 public class SendMessageController {
@@ -18,6 +21,6 @@ public class SendMessageController {
 
     @GetMapping("/sendMessage")
     public void process() {
-        streamClient.output().send(MessageBuilder.withPayload("我是萌新").build());
+        streamClient.output().send(MessageBuilder.withPayload("now " + new Date()).build());
     }
 }

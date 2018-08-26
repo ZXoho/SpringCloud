@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class StreamReceiver {
 
-    @StreamListener(StreamClient.INPUT)
+    @StreamListener(StreamClient.OUTUT)
     public void process(Object message) {
         log.info("StreamReceiver: {}", message);
     }
