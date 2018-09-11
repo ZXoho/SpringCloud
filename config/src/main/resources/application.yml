@@ -9,6 +9,7 @@ spring:
           username: ZXoho
           password: pineapple8799
           basedir: H:\project\spring cloud\config\basedir
+          force-pull: true
 eureka:
   client:
     service-url:
